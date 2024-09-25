@@ -1,23 +1,32 @@
 package main.java;
 
 public class CorpoHumano {
-    // metodo_acesso - tipagem - nome
+    // Metodo_acesso - tipagem - nome
     private double massa;
     private double altura;
 
+    // Construtor do Corpo Humano
     public CorpoHumano(double massa, double altura){
         this.massa = massa;
         this.altura = altura;
     }
 
-    //Setter do corpo humano
-    public void setCorpo (double ent_massa, double ent_altura){
-        massa = ent_massa;
-        altura = ent_altura;
+    // Setter da massa
+    public void setmassa (double massa){
+        this.massa = massa;
     }
 
-    //Getter do corpo humano
-    public double getCorpo(){
+    public void setaltura (double altura){
+        this.altura = altura;
+    }
+    
+    // Getter da massa
+    public double getmassa(){
         return massa;
+    }
+
+    // Getter da altura
+    public double getaltura(){
+        return altura;
     }
 }

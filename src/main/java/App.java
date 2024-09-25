@@ -9,18 +9,20 @@ public class App {
         Scanner ler = new Scanner(System.in); 
 
         //variável local a
-        String v2;
-        int v1;
+        double app_massa;
+        double app_altura;
 
         System.out.println("Comando de Saida de Dados");
         
-        System.out.printf("Informe uma palavra: ");
-        v2 = ler.next();
+        System.out.printf("Informe seu peso: ");
+        app_massa = ler.nextDouble();
 
-        System.out.printf("Informe um número: ");
-        v1 = ler.nextInt();
+        System.out.printf("Informe sua altura: ");
+        app_altura = ler.nextDouble();
 
-        System.out.printf(v2+" "+v1);
+        CorpoHumano imc = new CorpoHumano(app_massa, app_altura);
+
+        System.out.println(imc.getmassa() / imc.getaltura() );
     }
     public static void main(String[] args) throws Exception {
         funcao_teste();
