@@ -38,37 +38,37 @@ public class CorpoHumano {
     }
 
     // Setter da massa
-    public void setmassa (float massa){
+    public void setMassa (float massa){
         this.massa = massa;
     }
     // Setter da altura
-    public void setaltura (double altura){
+    public void setAltura (double altura){
         this.altura = altura;
     }
     // Setter do volume
-    public void setvolume (double volume){
+    public void setVolume (double volume){
         this.volume = volume;
     }
     // Setter da altura
-    public void setdensidade (double densidade){
+    public void setDensidade (double densidade){
         this.densidade = densidade;
     }
     
 
     // Getter da massa
-    public float getmassa(){
+    public float getMassa(){
         return massa;
     }
     // Getter da altura
-    public double getaltura(){
+    public double getAltura(){
         return altura;
     }
     // Getter da volume
-    public double getvolume(){
+    public double getVolume(){
         return volume;
     }
     // Getter da altura
-    public double getdensidade(){
+    public double getDensidade(){
         return densidade;
     }
 }
