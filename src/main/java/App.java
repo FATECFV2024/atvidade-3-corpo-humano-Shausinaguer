@@ -1,4 +1,5 @@
 package main.java;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class App {
@@ -11,7 +12,7 @@ public class App {
 
     public static void main(String[] args) throws Exception{
         try (//Biblioteca para entrada de dados
-        Scanner ler = new Scanner(System.in)) {
+        Scanner ler = new Scanner(System.in).useLocale(Locale.US)) {
             //variável local a
             float app_massa;
             double app_altura;
@@ -32,16 +33,14 @@ public class App {
             System.out.printf("Informe sua densidade: ");
             app_densidade = ler.nextDouble();
 
-            CorpoHumano imc = new CorpoHumano(app_massa, app_altura);
+            // CorpoHumano imc = new CorpoHumano(app_massa, app_altura);
 
             CorpoHumano corpo = new CorpoHumano(app_massa, app_altura, app_volume, app_densidade);
 
-            corpo.massa = 2;
-            calcularIMC(imc.getMassa(),imc.getAltura());
+            System.out.println(calcularIMC(corpo.getMassa(),corpo.getAltura())); 
         }
     }
     public static double calcularIMC(float app_massa, double app_altura){
-        System.out.println(app_massa / app_altura);
-        return (app_massa / app_altura);
+        return app_massa / (app_altura * app_altura);
     }
 }
