@@ -34,10 +34,10 @@ public class App {
 
             CorpoHumano imc = new CorpoHumano(app_massa, app_altura);
 
-            CorpoHumano c1 = new CorpoHumano(app_massa, app_altura, app_volume, app_densidade);
+            CorpoHumano corpo = new CorpoHumano(app_massa, app_altura, app_volume, app_densidade);
 
-            c1.massa = 2;
-            calcularIMC(imc.getmassa(),imc.getaltura());
+            corpo.massa = 2;
+            calcularIMC(imc.getMassa(),imc.getAltura());
         }
     }
     public static double calcularIMC(float app_massa, double app_altura){
